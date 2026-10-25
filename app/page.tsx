@@ -3,6 +3,7 @@ import AboutPanel from "./components/AboutPanel";
 import SkillsConstellation from "./components/SkillsConstellation";
 import ProjectArchive from "./components/ProjectArchive";
 import ThemeToggle from "./components/ThemeToggle";
+import { MessageCircle } from "lucide-react";
 
 export default function Home() {
   return (
@@ -868,8 +869,8 @@ export default function Home() {
 
               <p className="mt-4 max-w-2xl text-sm leading-6 text-[#C1B4B0]">
                 I am open to junior frontend or full-stack roles, internships,
-                freelance work, and remote collaboration. I am based in
-                Lahore, Pakistan.
+                freelance work, and remote collaboration. I am based in Lahore,
+                Pakistan.
               </p>
             </details>
 
@@ -1039,31 +1040,24 @@ export default function Home() {
               </div>
             </div>
           </div>
-
         </div>
       </section>
 
-      <footer className="border-t border-[#D9AE5A]/20 px-6 py-14 sm:px-10 lg:px-16">
+      <footer className="border-t border-[#D9AE5A]/20 px-6 pt-16 sm:px-10 lg:px-16">
         <div className="mx-auto max-w-7xl">
-          <div className="flex flex-col items-center text-center">
-            <span className="grid h-12 w-12 place-items-center rounded-full border border-[#D9AE5A]/55 font-display text-xl text-[#F0CE86]">
-              KE
-            </span>
-
-            <p className="mt-6 text-[0.65rem] font-semibold uppercase tracking-[0.24em] text-[#D9AE5A]">
-              Thank you for visiting
+          <div className="border-b border-[#D9AE5A]/20 pb-16 text-center">
+            <p className="text-[0.65rem] font-semibold uppercase tracking-[0.24em] text-[#D9AE5A]">
+              End note
             </p>
 
-            <h2 className="mt-4 max-w-2xl font-display text-4xl leading-tight text-[#F6EEDF] sm:text-5xl">
-              Let&apos;s make the next
-              <span className="gold-shimmer block italic text-[#F0CE86]">
-                thoughtful build count.
-              </span>
+            <h2 className="footer-thanks-reveal mt-5 font-display text-6xl leading-none text-[#F6EEDF] sm:text-7xl lg:text-8xl">
+              Thank <span className="gold-shimmer italic text-[#F0CE86]">you.</span>
             </h2>
 
-            <p className="mt-5 max-w-xl text-sm leading-6 text-[#C1B4B0]">
-              Have a role, collaboration, or project in mind? I would be glad
-              to hear from you.
+            <p className="mx-auto mt-6 max-w-xl text-sm leading-6 text-[#C1B4B0]">
+              Thank you for taking the time to review my work. I am open to
+              junior frontend and full-stack roles, internships, freelance work,
+              and thoughtful collaboration.
             </p>
 
             <div className="mt-8 flex flex-wrap justify-center gap-3">
@@ -1072,6 +1066,14 @@ export default function Home() {
                 className="rounded-full border border-[#D9AE5A]/70 px-5 py-3 text-xs font-bold uppercase tracking-[0.12em] text-[#F0CE86] transition hover:bg-[#D9AE5A] hover:text-[#140A18]"
               >
                 Email me ↗
+              </a>
+              <a
+                href="https://wa.me/923075588497?text=Hi%20Khansa%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect."
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-full border border-[#D9AE5A]/30 px-5 py-3 text-xs font-bold uppercase tracking-[0.12em] text-[#C1B4B0] transition hover:border-[#D9AE5A]/70 hover:text-[#F0CE86]"
+              >
+                WhatsApp ↗
               </a>
               <a
                 href="#home"
@@ -1105,6 +1107,17 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      <a
+        href="https://wa.me/923075588497?text=Hi%20Khansa%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect."
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Message Khansa on WhatsApp"
+        className="fixed bottom-5 right-5 z-40 inline-flex items-center gap-2 rounded-full border border-[#D9AE5A]/70 bg-[#28122D] px-4 py-3 text-xs font-bold uppercase tracking-[0.1em] text-[#F0CE86] shadow-[0_12px_30px_rgba(0,0,0,0.28)] transition hover:-translate-y-1 hover:bg-[#D9AE5A] hover:text-[#140A18]"
+      >
+        <MessageCircle size={17} strokeWidth={1.8} />
+        <span className="hidden sm:inline">WhatsApp</span>
+      </a>
     </main>
   );
 }
