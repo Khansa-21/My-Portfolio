@@ -175,6 +175,92 @@ html[data-theme="light"] .credentials-mark {
   }
 }
 
+.footer-wash {
+  background: radial-gradient(
+    70% 100% at 50% 0%,
+    rgba(91, 39, 83, 0.26),
+    transparent 72%
+  );
+}
+
+html[data-theme="light"] .footer-wash {
+  background: radial-gradient(
+    70% 100% at 50% 0%,
+    rgba(217, 174, 90, 0.18),
+    transparent 72%
+  );
+}
+
+.footer-divider {
+  position: relative;
+}
+
+.footer-divider::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(217, 174, 90, 0.68) 18%,
+    rgba(240, 206, 134, 0.95) 50%,
+    rgba(217, 174, 90, 0.68) 82%,
+    transparent
+  );
+  content: "";
+}
+
+.footer-link,
+.footer-action,
+.footer-connect-link,
+.whatsapp-fab {
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.footer-link:hover {
+  color: var(--gold-light);
+  transform: translateX(0.18rem);
+}
+
+.footer-action:hover,
+.footer-connect-link:hover {
+  border-color: var(--gold-light);
+  color: var(--gold-light);
+}
+
+.footer-action-primary:hover,
+.whatsapp-fab:hover {
+  background: var(--gold);
+  color: #140a18;
+  transform: translateY(-0.18rem);
+}
+
+.footer-connect-link:hover {
+  background: color-mix(in srgb, var(--gold) 12%, transparent);
+}
+
+html[data-theme="light"] .footer-link:hover {
+  color: #5d3807;
+}
+
+html[data-theme="light"] .footer-action:hover,
+html[data-theme="light"] .footer-connect-link:hover {
+  border-color: #8c5c16 !important;
+  color: #5d3807 !important;
+}
+
+html[data-theme="light"] .footer-action-primary:hover,
+html[data-theme="light"] .whatsapp-fab:hover {
+  background: #ae7b28 !important;
+  color: #fffaf2 !important;
+}
+
 .about-section {
   position: relative;
   overflow: hidden;

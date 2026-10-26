@@ -3,7 +3,12 @@ import AboutPanel from "./components/AboutPanel";
 import SkillsConstellation from "./components/SkillsConstellation";
 import ProjectArchive from "./components/ProjectArchive";
 import ThemeToggle from "./components/ThemeToggle";
-import { MessageCircle } from "lucide-react";
+import {
+  BriefcaseBusiness,
+  Mail,
+  MapPin,
+  MessageCircle,
+} from "lucide-react";
 
 export default function Home() {
   return (
@@ -152,7 +157,7 @@ export default function Home() {
               </a>
 
               <a
-                href="mailto:itskhansaehsan@gmail.com"
+                href="#contact"
                 className="transition hover:text-[#F0CE86]"
               >
                 Email ↗
@@ -917,7 +922,7 @@ export default function Home() {
             {/* Contact details */}
             <div className="border-b border-[#D9AE5A]/20 p-7 sm:p-9 lg:border-r lg:border-b-0">
               <p className="text-[0.62rem] font-semibold uppercase tracking-[0.2em] text-[#D9AE5A]">
-                Correspondence channel
+                Contact details
               </p>
 
               <div className="mt-7 space-y-4">
@@ -925,7 +930,8 @@ export default function Home() {
                   href="mailto:itskhansaehsan@gmail.com"
                   className="block border border-[#D9AE5A]/15 bg-[#140A18]/35 p-5 transition hover:border-[#D9AE5A]/45"
                 >
-                  <p className="text-[0.62rem] uppercase tracking-[0.16em] text-[#C1B4B0]">
+                  <p className="flex items-center gap-2 text-[0.62rem] uppercase tracking-[0.16em] text-[#C1B4B0]">
+                    <Mail size={13} strokeWidth={1.8} />
                     Email
                   </p>
                   <p className="mt-2 text-sm text-[#F6EEDF]">
@@ -934,7 +940,8 @@ export default function Home() {
                 </a>
 
                 <div className="border border-[#D9AE5A]/15 bg-[#140A18]/35 p-5">
-                  <p className="text-[0.62rem] uppercase tracking-[0.16em] text-[#C1B4B0]">
+                  <p className="flex items-center gap-2 text-[0.62rem] uppercase tracking-[0.16em] text-[#C1B4B0]">
+                    <MapPin size={13} strokeWidth={1.8} />
                     Base location
                   </p>
                   <p className="mt-2 text-sm text-[#F6EEDF]">
@@ -943,7 +950,8 @@ export default function Home() {
                 </div>
 
                 <div className="border border-[#D9AE5A]/15 bg-[#140A18]/35 p-5">
-                  <p className="text-[0.62rem] uppercase tracking-[0.16em] text-[#C1B4B0]">
+                  <p className="flex items-center gap-2 text-[0.62rem] uppercase tracking-[0.16em] text-[#C1B4B0]">
+                    <BriefcaseBusiness size={13} strokeWidth={1.8} />
                     Opportunities
                   </p>
                   <p className="mt-2 text-sm text-[#F6EEDF]">
@@ -1034,6 +1042,16 @@ export default function Home() {
                   Send email ↗
                 </a>
 
+                <a
+                  href="https://wa.me/923075588497?text=Hi%20Khansa%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect."
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full border border-[#D9AE5A]/30 px-5 py-3 text-xs font-bold uppercase tracking-[0.12em] text-[#C1B4B0] transition hover:border-[#D9AE5A]/70 hover:text-[#F0CE86]"
+                >
+                  <MessageCircle size={15} strokeWidth={1.8} />
+                  WhatsApp
+                </a>
+
                 <p className="text-xs text-[#C1B4B0]">
                   Usually responds within 24–48 hours.
                 </p>
@@ -1043,9 +1061,10 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="border-t border-[#D9AE5A]/20 px-6 pt-16 sm:px-10 lg:px-16">
-        <div className="mx-auto max-w-7xl">
-          <div className="border-b border-[#D9AE5A]/20 pb-16 text-center">
+      <footer className="relative overflow-hidden border-t border-[#D9AE5A]/20 px-6 pt-16 sm:px-10 lg:px-16">
+        <div aria-hidden="true" className="footer-wash pointer-events-none absolute inset-x-0 top-0 h-72" />
+        <div className="relative mx-auto max-w-7xl">
+          <div className="footer-divider pb-16 text-center">
             <p className="text-[0.65rem] font-semibold uppercase tracking-[0.24em] text-[#D9AE5A]">
               End note
             </p>
@@ -1062,31 +1081,83 @@ export default function Home() {
 
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <a
-                href="mailto:itskhansaehsan@gmail.com"
-                className="rounded-full border border-[#D9AE5A]/70 px-5 py-3 text-xs font-bold uppercase tracking-[0.12em] text-[#F0CE86] transition hover:bg-[#D9AE5A] hover:text-[#140A18]"
+                href="#contact"
+                className="footer-action footer-action-primary rounded-full border border-[#D9AE5A]/70 px-5 py-3 text-xs font-bold uppercase tracking-[0.12em] text-[#F0CE86]"
               >
-                Email me ↗
-              </a>
-              <a
-                href="https://wa.me/923075588497?text=Hi%20Khansa%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect."
-                target="_blank"
-                rel="noreferrer"
-                className="rounded-full border border-[#D9AE5A]/30 px-5 py-3 text-xs font-bold uppercase tracking-[0.12em] text-[#C1B4B0] transition hover:border-[#D9AE5A]/70 hover:text-[#F0CE86]"
-              >
-                WhatsApp ↗
+                Message me
               </a>
               <a
                 href="#home"
-                className="rounded-full border border-[#D9AE5A]/30 px-5 py-3 text-xs font-bold uppercase tracking-[0.12em] text-[#C1B4B0] transition hover:border-[#D9AE5A]/70 hover:text-[#F0CE86]"
+                className="footer-action rounded-full border border-[#D9AE5A]/30 px-5 py-3 text-xs font-bold uppercase tracking-[0.12em] text-[#C1B4B0]"
               >
                 Back to top ↑
               </a>
             </div>
           </div>
 
-          <div className="mt-12 flex flex-col gap-4 border-t border-[#D9AE5A]/20 pt-6 text-[0.62rem] font-semibold uppercase tracking-[0.14em] text-[#C1B4B0] sm:flex-row sm:items-center sm:justify-between">
-            <p>© 2026 Khansa Ehsan · Built with care</p>
-            <div className="flex items-center justify-center gap-5 sm:justify-end">
+          <div className="grid gap-8 py-10 sm:grid-cols-2 lg:grid-cols-[1.15fr_0.65fr_0.7fr] lg:items-end">
+            <div className="max-w-md">
+              <div className="flex items-center gap-3">
+                <span className="relative flex h-8 w-8 items-center justify-center border border-[#D9AE5A]/80 font-display text-sm text-[#F0CE86]">
+                  KE
+                  <span className="absolute -right-1 -top-1 h-2 w-2 rounded-full border border-[#1A0C1E] bg-[#D9AE5A]" />
+                </span>
+                <div>
+                  <p className="font-display text-lg text-[#F6EEDF]">Khansa Ehsan</p>
+                  <p className="text-[0.58rem] font-semibold uppercase tracking-[0.16em] text-[#D9AE5A]">
+                    Full-stack developer
+                  </p>
+                </div>
+              </div>
+
+              <p className="mt-4 text-sm leading-6 text-[#C1B4B0]">
+                Building reliable web applications from responsive interfaces to
+                secure APIs and data-driven workflows.
+              </p>
+            </div>
+
+            <nav aria-label="Footer navigation" className="sm:justify-self-end lg:justify-self-center">
+              <p className="text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-[#D9AE5A]">
+                Explore
+              </p>
+              <div className="mt-4 grid grid-cols-2 gap-x-5 gap-y-2 text-xs text-[#C1B4B0]">
+                <a href="#about" className="footer-link">About</a>
+                <a href="#projects" className="footer-link">Work</a>
+                <a href="#approach" className="footer-link">Approach</a>
+                <a href="#skills" className="footer-link">Skills</a>
+                <a href="#journey" className="footer-link">Journey</a>
+                <a href="#credentials" className="footer-link">Credentials</a>
+                <a href="#faq" className="footer-link">FAQ</a>
+                <a href="#contact" className="footer-link">Contact</a>
+              </div>
+            </nav>
+
+            <div className="sm:justify-self-end">
+              <p className="text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-[#D9AE5A]">
+                Connect
+              </p>
+              <div className="mt-4 flex flex-wrap gap-2 text-xs font-semibold text-[#C1B4B0]">
+                <a href="mailto:itskhansaehsan@gmail.com" className="footer-connect-link inline-flex items-center gap-2 border border-[#D9AE5A]/30 px-3 py-2">
+                  <Mail size={16} strokeWidth={1.8} />
+                  Email
+                </a>
+                <a href="https://github.com/Khansa-21" target="_blank" rel="noreferrer" className="footer-connect-link border border-[#D9AE5A]/30 px-3 py-2">
+                  GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/khansa-ehsan-274282285" target="_blank" rel="noreferrer" className="footer-connect-link border border-[#D9AE5A]/30 px-3 py-2">
+                  LinkedIn
+                </a>
+                <a href="https://wa.me/923075588497?text=Hi%20Khansa%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" rel="noreferrer" className="footer-connect-link inline-flex items-center gap-2 border border-[#D9AE5A]/30 px-3 py-2">
+                  <MessageCircle size={16} strokeWidth={1.8} />
+                  WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-3 border-t border-[#D9AE5A]/20 py-5 text-[0.62rem] font-semibold uppercase tracking-[0.14em] text-[#C1B4B0] sm:flex-row sm:items-center sm:justify-between">
+            <p>© 2026 Khansa Ehsan · Portfolio website</p>
+            <div className="hidden">
               <a
                 href="https://github.com/Khansa-21"
                 target="_blank"
@@ -1113,7 +1184,7 @@ export default function Home() {
         target="_blank"
         rel="noreferrer"
         aria-label="Message Khansa on WhatsApp"
-        className="fixed bottom-5 right-5 z-40 inline-flex items-center gap-2 rounded-full border border-[#D9AE5A]/70 bg-[#28122D] px-4 py-3 text-xs font-bold uppercase tracking-[0.1em] text-[#F0CE86] shadow-[0_12px_30px_rgba(0,0,0,0.28)] transition hover:-translate-y-1 hover:bg-[#D9AE5A] hover:text-[#140A18]"
+        className="whatsapp-fab fixed bottom-5 right-5 z-40 inline-flex items-center gap-2 rounded-full border border-[#D9AE5A]/70 bg-[#28122D] px-4 py-3 text-xs font-bold uppercase tracking-[0.1em] text-[#F0CE86] shadow-[0_12px_30px_rgba(0,0,0,0.28)]"
       >
         <MessageCircle size={17} strokeWidth={1.8} />
         <span className="hidden sm:inline">WhatsApp</span>

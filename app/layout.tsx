@@ -50,6 +50,11 @@ export const metadata: Metadata = {
     "Portfolio",
   ],
   authors: [{ name: "Khansa Ehsan" }],
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
   robots: {
     index: true,
     follow: true,

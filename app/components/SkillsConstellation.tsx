@@ -24,6 +24,7 @@ const skills: Skill[] = [
   { name: "JWT", category: "Backend", ring: "inner" },
   { name: "Express", category: "Backend", ring: "inner" },
   { name: "API integrations", category: "Backend", ring: "inner" },
+  { name: "OpenAI API", category: "Backend", ring: "inner" },
 
   { name: "Tailwind CSS", category: "Frontend", ring: "middle" },
   { name: "HTML5", category: "Frontend", ring: "middle" },
@@ -31,8 +32,8 @@ const skills: Skill[] = [
   { name: "MongoDB", category: "Data", ring: "middle" },
   { name: "SQL Server", category: "Data", ring: "middle" },
   { name: "Mongoose", category: "Data", ring: "middle" },
-  { name: "Zod", category: "Security", ring: "middle" },
   { name: "CORS", category: "Security", ring: "middle" },
+  { name: "Zod", category: "Security", ring: "middle" },
   { name: "node-cron", category: "Backend", ring: "middle" },
   { name: "Upstash", category: "Data", ring: "middle" },
 
@@ -60,7 +61,15 @@ const skillLedger = [
   },
   {
     category: "Backend",
-    tools: ["Node.js", "Express", "REST APIs", "API integrations", "JWT", "Zod"],
+    tools: [
+      "Node.js",
+      "Express",
+      "REST APIs",
+      "API integrations",
+      "OpenAI API",
+      "JWT",
+      "Zod",
+    ],
   },
   {
     category: "Data",
@@ -83,6 +92,7 @@ const skillLedger = [
       "WordPress",
       "Microsoft 365",
       "AI assistants",
+      "Agentic coding workflows",
       "SEO",
     ],
   },
