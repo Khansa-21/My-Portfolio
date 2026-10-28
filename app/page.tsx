@@ -10,6 +10,17 @@ import {
   MessageCircle,
 } from "lucide-react";
 
+const navItems = [
+  { label: "About", href: "#about" },
+  { label: "Work", href: "#projects" },
+  { label: "Approach", href: "#approach" },
+  { label: "Skills", href: "#skills" },
+  { label: "Journey", href: "#journey" },
+  { label: "Credentials", href: "#credentials" },
+  { label: "FAQ", href: "#faq" },
+  { label: "Contact", href: "#contact" },
+];
+
 export default function Home() {
   return (
     <main className="min-h-screen overflow-hidden bg-transparent text-[#F6EEDF]">
@@ -43,41 +54,14 @@ export default function Home() {
                 aria-label="Main navigation"
                 className="hidden items-center gap-4 lg:flex xl:gap-5"
               >
-                <a href="#about" className="nav-link">
-                  About
-                </a>
-                <a href="#projects" className="nav-link">
-                  Work
-                </a>
-                <a href="#approach" className="nav-link">
-                  Approach
-                </a>
-                <a href="#skills" className="nav-link">
-                  Skills
-                </a>
-                <a href="#journey" className="nav-link">
-                  Journey
-                </a>
-                <a href="#credentials" className="nav-link">
-                  Credentials
-                </a>
-                <a href="#faq" className="nav-link">
-                  FAQ
-                </a>
-                <a href="#contact" className="nav-link">
-                  Contact
-                </a>
+                {navItems.map(({ label, href }) => (
+                  <a key={label} href={href} className="nav-link">
+                    {label}
+                  </a>
+                ))}
               </nav>
 
               <div className="mr-1 flex items-center gap-5 sm:mr-2">
-                <a
-                  href="/KHANSA_E_Resume.pdf"
-                  download
-                  className="nav-resume hidden md:inline-flex"
-                >
-                  Résumé <span aria-hidden="true">↓</span>
-                </a>
-
                 <ThemeToggle />
               </div>
             </div>
@@ -130,10 +114,11 @@ export default function Home() {
 
               <a
                 href="/KHANSA_E_Resume.pdf"
-                download
+                target="_blank"
+                rel="noreferrer"
                 className="rounded-full border border-[#D9AE5A]/55 px-6 py-3 text-xs font-bold uppercase tracking-[0.12em] text-[#F6EEDF] transition hover:border-[#F0CE86] hover:text-[#F0CE86]"
               >
-                Download résumé ↓
+                View résumé ↗
               </a>
             </div>
 
@@ -211,14 +196,14 @@ export default function Home() {
           </div>
 
           <div className="border-l border-[#D9AE5A] pl-4">
-            <p className="font-display text-4xl text-[#F6EEDF]">5</p>
+            <p className="font-display text-4xl text-[#F6EEDF]">4</p>
             <p className="mt-1 text-xs uppercase tracking-[0.16em] text-[#C1B4B0]">
-              Full-stack projects built
+              Featured projects
             </p>
           </div>
 
           <div className="border-l border-[#D9AE5A] pl-4">
-            <p className="font-display text-4xl text-[#F6EEDF]">3.52 / 4.0</p>
+            <p className="font-display text-4xl text-[#F6EEDF]">3.56 / 4.0</p>
             <p className="mt-1 text-xs uppercase tracking-[0.16em] text-[#C1B4B0]">
               B.S. Computer Science CGPA
             </p>
@@ -375,8 +360,8 @@ export default function Home() {
                   Find the real need
                 </h3>
                 <p className="mt-4 text-sm leading-6 text-[#C1B4B0]">
-                  Identify users, goals, rules, and edge cases before deciding
-                  what the product should do.
+                  For the Resource Hub, I added a check that rejects a booking
+                  if the same equipment is already booked at that time.
                 </p>
                 <p className="mt-5 text-[0.6rem] uppercase tracking-[0.15em] text-[#D9AE5A]">
                   Users · Scope
@@ -473,7 +458,8 @@ export default function Home() {
                   Find the real need
                 </h3>
                 <p className="mt-3 text-sm leading-6 text-[#C1B4B0]">
-                  Understand users, goals, rules, and edge cases.
+                  For the Resource Hub, I added a check that rejects a booking
+                  if the same equipment is already booked at that time.
                 </p>
               </div>
             </li>

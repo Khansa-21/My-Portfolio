@@ -20,10 +20,10 @@ const skills: Skill[] = [
   { name: "TypeScript", category: "Frontend", ring: "inner" },
   { name: "Angular", category: "Frontend", ring: "inner" },
   { name: "React", category: "Frontend", ring: "inner" },
-  { name: "Node.js", category: "Backend", ring: "inner" },
+  { name: "API integrations", category: "Backend", ring: "inner" },
   { name: "JWT", category: "Backend", ring: "inner" },
   { name: "Express", category: "Backend", ring: "inner" },
-  { name: "API integrations", category: "Backend", ring: "inner" },
+  { name: "Node.js", category: "Backend", ring: "inner" },
   { name: "OpenAI API", category: "Backend", ring: "inner" },
 
   { name: "Tailwind CSS", category: "Frontend", ring: "middle" },

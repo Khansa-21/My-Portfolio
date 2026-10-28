@@ -72,6 +72,53 @@ export default function AboutPanel() {
           </div>
         </div>
       </div>
+
+      <section
+        aria-labelledby="experience-heading"
+        className="mx-auto mt-14 max-w-7xl border-t border-[#D9AE5A]/20 pt-8"
+      >
+        <h3
+          id="experience-heading"
+          className="font-display text-3xl text-[#F6EEDF]"
+        >
+          Experience
+        </h3>
+
+        <div className="mt-6 grid gap-8 sm:grid-cols-2">
+          <article className="border-t border-[#D9AE5A]/35 pt-4">
+            <p className="text-[0.62rem] font-semibold uppercase tracking-[0.16em] text-[#D9AE5A]">
+              2025–2026
+            </p>
+            <h4 className="mt-2 font-display text-2xl text-[#F6EEDF]">
+              Viewdu
+            </h4>
+            <p className="mt-1 text-xs font-semibold uppercase tracking-[0.12em] text-[#F0CE86]">
+              Collaborative marketplace project
+            </p>
+            <p className="mt-3 text-sm leading-6 text-[#C1B4B0]">
+              Contributed to Angular interface and design work, an i18n
+              translation service, and selected database and backend tasks
+              alongside an experienced engineer.
+            </p>
+          </article>
+
+          <article className="border-t border-[#D9AE5A]/35 pt-4">
+            <p className="text-[0.62rem] font-semibold uppercase tracking-[0.16em] text-[#D9AE5A]">
+              2024
+            </p>
+            <h4 className="mt-2 font-display text-2xl text-[#F6EEDF]">
+              WordPress Website Support
+            </h4>
+            <p className="mt-1 text-xs font-semibold uppercase tracking-[0.12em] text-[#F0CE86]">
+              Paid client work · Men’s Store and Dulha House
+            </p>
+            <p className="mt-3 text-sm leading-6 text-[#C1B4B0]">
+              Maintained a WooCommerce store, updated Elementor Pro content and
+              on-page SEO, and completed off-page backlink work for Dulha House.
+            </p>
+          </article>
+        </div>
+      </section>
     </section>
   );
 }

@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     "MERN Developer",
     "React Developer",
     "Angular Developer",
-    "Next.js Developer",
+    "MEAN Developer",
     "Portfolio",
   ],
   authors: [{ name: "Khansa Ehsan" }],

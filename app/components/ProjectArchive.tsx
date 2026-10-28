@@ -9,12 +9,12 @@ const projects = [
     number: "01",
     title: "University Resource Hub",
     category: "Full-stack university booking system",
-    status: "Live application",
+    status: "Portfolio project · Live demo",
     role: "Solo developer",
     description:
       "A booking system for university labs and shared equipment with availability checks, approvals, waitlists, training rules, and QR check-in.",
     whyItMatters:
-      "It replaces manual booking records with a clearer process for finding, reserving, approving, and checking in to shared resources.",
+      "Designed to replace manual booking records with a clearer process for finding, reserving, approving, and checking in to shared resources.",
 
     systemDetails: [
       [
@@ -23,7 +23,7 @@ const projects = [
       ],
       [
         "Outcome",
-        "A live full-stack application with the frontend on Vercel, backend on Azure App Service, and Azure SQL Database.",
+        "A deployed portfolio demo with the frontend on Vercel, backend on Azure App Service, and Azure SQL Database.",
       ],
     ],
     image: "/projects/resource-hub-home.png",
@@ -67,7 +67,7 @@ const projects = [
     number: "02",
     title: "Flowcodify",
     category: "Final Year Project · Team project",
-    status: "Live application",
+    status: "Final-year team project · Live demo",
     role: "Backend Developer",
     description:
       "A visual-to-code workspace that turns prompts, flowcharts, and wireframes into editable and previewable applications.",
@@ -124,7 +124,7 @@ const projects = [
     number: "03",
     title: "Subvio",
     category: "Subscription tracker",
-    status: "In active development",
+    status: "Personal project · In development",
     role: "Solo developer",
     description:
       "A subscription tracker for recording recurring services, reviewing spending, managing renewal dates, and sending reminders.",
@@ -183,7 +183,7 @@ const projects = [
     number: "04",
     title: "Brandless Watches",
     category: "Frontend commerce experience",
-    status: "Live application",
+    status: "Personal project · Live demo",
     role: "Solo frontend developer",
     description:
       "A polished watch storefront built around product discovery, a persistent cart, and a clear checkout journey.",
