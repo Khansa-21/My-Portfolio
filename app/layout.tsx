@@ -34,21 +34,13 @@ const bodyFont = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: "Khansa Ehsan | Full-Stack Developer",
-    template: "%s | Khansa Ehsan",
-  },
+  metadataBase: new URL("https://www.khansaehsan.cv"),
+  title: "Khansa Ehsan | Junior Full-Stack Developer in Lahore",
   description:
-    "Portfolio of Khansa Ehsan, a full-stack developer building thoughtful web experiences",
-  keywords: [
-    "Khansa Ehsan",
-    "Full-Stack Developer",
-    "MERN Developer",
-    "React Developer",
-    "Angular Developer",
-    "MEAN Developer",
-    "Portfolio",
-  ],
+    "Khansa Ehsan is a Lahore-based junior full-stack developer building web applications with React, Angular, Node.js, TypeScript, and SQL. Explore projects and experience.",
+  alternates: {
+    canonical: "/",
+  },
   authors: [{ name: "Khansa Ehsan" }],
   icons: {
     icon: "/favicon.svg",
@@ -58,6 +50,20 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+  },
+  openGraph: {
+    type: "website",
+    url: "/",
+    siteName: "Khansa Ehsan Portfolio",
+    title: "Khansa Ehsan | Junior Full-Stack Developer",
+    description:
+      "Explore Khansa Ehsan's web development projects and experience with React, Angular, Node.js, TypeScript, and SQL.",
+  },
+  twitter: {
+    card: "summary",
+    title: "Khansa Ehsan | Junior Full-Stack Developer",
+    description:
+      "Web development projects and experience with React, Angular, Node.js, TypeScript, and SQL.",
   },
 };
 
